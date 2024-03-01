@@ -4,8 +4,8 @@ function walk(curr: BinaryNode<number> | null, path: number[]): number[] {
     }
 
     // pre
-    // recurse
     walk(curr.left, path);
+    // recurse
     path.push(curr.value);
     walk(curr.right, path);
     // post
